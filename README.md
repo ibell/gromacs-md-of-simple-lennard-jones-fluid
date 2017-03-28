@@ -1,5 +1,19 @@
 # Building gromacs from sources
 
+All informations here: http://manual.gromacs.org/documentation/2016.3/install-guide/index.html
+```sh
+git clone https://github.com/gromacs/gromacs
+cd gromacs
+mkdir build
+cd build
+cmake .. -DGMX_BUILD_OWN_FFTW=ON
+make
+make check
+sudo make install
+source /usr/local/gromacs/bin/GMXRC
+```
+You should add the "source" to your bashrc or zshrc or ... that gives you access to gmx through
+
 
 # Generate a lattice of 9000 methane (single site) molecules
 
@@ -16,3 +30,13 @@ gmx mdrun -s methane_em.tpr -v -c methane_em.gro # generates the trajectory file
 gmx grompp -f npt_md.mdp -c methane_em.gro -p methane.top -o methane_npt.tpr
 gmx mdrun -s methane_npt.tpr -v -c methane_npt.gro
 ```
+
+# Useful ressources
+
+https://encyclopedia.airliquide.com/fr/methane
+http://manual.gromacs.org/programs/gmx-grompp.html
+http://www.bevanlab.biochem.vt.edu/Pages/Personal/justin/gmx-tutorials/
+https://becksteinlab.physics.asu.edu/pages/courses/2013/SimBioNano/11/SimulatingliquidArgonwithGromacs.pdf
+http://www3.mpibpc.mpg.de/groups/de_groot/compbio/p1/index.html
+http://manual.gromacs.org/documentation/2016.3/install-guide/index.html
+https://github.com/gromacs/gromacs
