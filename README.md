@@ -7,9 +7,9 @@ cd gromacs
 mkdir build
 cd build
 cmake .. -DGMX_BUILD_OWN_FFTW=ON
-make
+make -j
 make check
-sudo make install
+sudo make -j install
 source /usr/local/gromacs/bin/GMXRC
 ```
 You should add the "source" to your bashrc or zshrc or ... that gives you access to gmx through
