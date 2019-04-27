@@ -33,10 +33,10 @@ gmx mdrun -s methane_npt.tpr -v -c methane_npt.gro
 
 # Useful ressources
 
-https://encyclopedia.airliquide.com/fr/methane
-http://manual.gromacs.org/programs/gmx-grompp.html
-http://www.bevanlab.biochem.vt.edu/Pages/Personal/justin/gmx-tutorials/
-https://becksteinlab.physics.asu.edu/pages/courses/2013/SimBioNano/11/SimulatingliquidArgonwithGromacs.pdf
-http://www3.mpibpc.mpg.de/groups/de_groot/compbio/p1/index.html
-http://manual.gromacs.org/documentation/2016.3/install-guide/index.html
-https://github.com/gromacs/gromacs
+* https://encyclopedia.airliquide.com/fr/methane
+* http://manual.gromacs.org/programs/gmx-grompp.html
+* http://www.bevanlab.biochem.vt.edu/Pages/Personal/justin/gmx-tutorials/
+* https://becksteinlab.physics.asu.edu/pages/courses/2013/SimBioNano/11/SimulatingliquidArgonwithGromacs.pdf
+* http://www3.mpibpc.mpg.de/groups/de_groot/compbio/p1/index.html
+* http://manual.gromacs.org/documentation/2016.3/install-guide/index.html
+* https://github.com/gromacs/gromacs
